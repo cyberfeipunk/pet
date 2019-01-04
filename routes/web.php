@@ -12,8 +12,13 @@
 */
 
 Route::get('/', function () {
+<<<<<<< HEAD
     //return view('welcome');
     return redirect("dashboard");
+=======
+    $a = __LINE__;
+    return view('welcome');
+>>>>>>> ce6d55393fbeefa343cfe8cf7d7f329f81a35830
 });
 
 //后台管理员登录接口
