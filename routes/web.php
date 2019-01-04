@@ -12,6 +12,7 @@
 */
 
 Route::get('/', function () {
+    $a = __LINE__;
     return view('welcome');
 });
 
@@ -20,4 +21,3 @@ Route::get('/', function () {
 Route::get('/dashboard/{path?}','Backend\HomeController@index')->where('path', '[\/\w\.-]*');
 
 Auth::routes();
-
