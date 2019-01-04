@@ -12,7 +12,8 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    //return view('welcome');
+    return redirect("dashboard");
 });
 
 //后台管理员登录接口
@@ -20,4 +21,3 @@ Route::get('/', function () {
 Route::get('/dashboard/{path?}','Backend\HomeController@index')->where('path', '[\/\w\.-]*');
 
 Auth::routes();
-
