@@ -29,6 +29,10 @@ class FoodRepositoryEloquent extends AbstractRepository implements FoodRepositor
      */
     public function searchFoods(int $perPage = 0)
     {
+        $a = $this->foodsFields();
+        $b =  new FilterRequest($this->filters);
+        $c = $a->withCriteria($b);
+        return $c->paginate( $perPage );
         return $this->foodsFields()->withCriteria(
             new FilterRequest($this->filters)
         )->paginate($perPage);

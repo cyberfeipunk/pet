@@ -95562,7 +95562,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -95573,6 +95573,12 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -95591,9 +95597,29 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [_vm._v("\n    后台主模板\n")])
+  return _vm._m(0)
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [
+      _vm._v("\n    后台主模板 "),
+      _c("br"),
+      _vm._v("\n    dashboard/HomeController->index();"),
+      _c("br"),
+      _vm._v("\n    Home.blade.php->view(dashboard.home)"),
+      _c("br"),
+      _vm._v("\n    div #app"),
+      _c("br"),
+      _vm._v("\n    app.js->router->dashboard->children(home)"),
+      _c("br"),
+      _vm._v("\n    ./views/backend/layouts/Main.vue"),
+      _c("br")
+    ])
+  }
+]
 render._withStripped = true
 module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
