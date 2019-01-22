@@ -19,6 +19,6 @@ Route::get('/', function () {
 
 //后台管理员登录接口
 
-Route::get('/dashboard/{path?}','Backend\HomeController@index')->where('path', '[\/\w\.-]*');
+Route::get('/dashboard/{path?}','Dashboard\HomeController@index')->where('path', '[\/\w\.-]*');
 
 Auth::routes();
