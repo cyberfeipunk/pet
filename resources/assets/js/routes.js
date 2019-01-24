@@ -82,6 +82,21 @@ export default [
                                 component: require('./views/backend/box/Edit.vue')
                             }
                         ]
+                    },{
+                        path:'category',
+                        component:require('./views/backend/layouts/ModuleView.vue'),
+                        children:[
+                            {
+                                path:'/',
+                                name:'petCategoryHome',
+                                component:require('./views/backend/petcategory/Home.vue')
+                            },
+                            {
+                                path:'create',
+                                name:'petCategoryCreate',
+                                component:require('./views/backend/petcategory/Create.vue')
+                            }
+                        ]
                     }
                 ]
             },

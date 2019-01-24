@@ -19,5 +19,7 @@ export default {
     feedingEdit:'修改宠物喂养记录',
     growthTitle:'宠物成长管理',
     growthCreate:'添加宠物成长记录',
-    growthEdit:'修改宠物成长记录'
+    growthEdit:'修改宠物成长记录',
+    petCategorytitle:'宠物分类管理',
+    petCategoryCreate:'添加宠物分类'
 }

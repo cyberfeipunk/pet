@@ -51,6 +51,9 @@
                                 <router-link to="/dashboard/gene">基因管理</router-link>
                             </li>
                             <li>
+                                <router-link to="/dashboard/pet/category">宠物分类管理</router-link>
+                            </li>
+                            <li>
                                 <router-link to="/dashboard/pet">宠物管理</router-link>
                             </li>
                         </ul>

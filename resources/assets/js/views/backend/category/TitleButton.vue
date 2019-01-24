@@ -13,6 +13,7 @@
     export default{
         methods: {
             createView(){
+              console.log(this.$router);
                 this.$router.push({name: foodCategoryView.create});
             },
             editView(){

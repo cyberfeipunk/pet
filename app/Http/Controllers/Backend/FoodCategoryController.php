@@ -65,7 +65,8 @@ class FoodCategoryController extends Controller
     {
         $result=$this->foodCategory->storeFoodCategory($request->all());
         if(!empty($result)){
-            return $this->withCreated(['message'=>trans('message.create.success')]);
+            $msg = ['message'=>trans('message.create.success')];
+            return $this->withCreated($msg);
         }
         return $this->withCreated($result);
     }

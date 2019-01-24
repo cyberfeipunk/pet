@@ -30,6 +30,7 @@ class ArchitectureServiceProvider extends ServiceProvider
         $this->app->bind(\App\Repository\Contracts\PetBoxRepository::class, \App\Repository\Eloquent\PetBoxRepositoryEloquent::class);
         $this->app->bind(\App\Repository\Contracts\PetFeedingRepository::class, \App\Repository\Eloquent\PetFeedingRepositoryEloquent::class);
         $this->app->bind(\App\Repository\Contracts\PetGrowthRepository::class, \App\Repository\Eloquent\PetGrowthRepositoryEloquent::class);
+        $this->app->bind(\App\Repository\Contracts\PetCategoryRepository::class,\App\Repository\Eloquent\PetCategoryRepositoryEloquent::class);
         //end-binding
     }
 }

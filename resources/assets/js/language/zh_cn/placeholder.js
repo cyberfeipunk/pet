@@ -1,5 +1,6 @@
 export default {
     categoryName:'请输入分类名称',
+    petcategoryName:'请输入宠物分类名称',
     foodName:'请输入食物名称',
     petName:'请输入宠物名称',
     categorySelect:'请选择食物分类',

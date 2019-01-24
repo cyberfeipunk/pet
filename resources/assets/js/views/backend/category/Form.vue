@@ -38,7 +38,7 @@
                         { min: 1, max: 10, message: '长度在 1 到 10 个字符', trigger: 'blur' }
                     ],
                     sort:[
-                        { type: 'number', message: '序号必须为数字值'}
+                        //{ type: 'number', message: '序号必须为数字值'}
                     ]
                 }
             }

@@ -6,6 +6,12 @@ export const petView ={
     edit: 'petEdit'
 };
 
+export const petCategoryView ={
+  index:'petCategoryHome',
+  create:'petCategoryCreate',
+  edit:'petCategoryEdit'
+}
+
 export const boxView ={
     index:'boxHome',
     create: 'boxCreate',
